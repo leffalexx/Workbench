@@ -1,4 +1,5 @@
-﻿/* int num1, num2;
+﻿/*
+int num1, num2;
 
 Console.Write("Input first number ");
 num1 = Convert.ToInt32(Console.ReadLine());
@@ -14,8 +15,9 @@ else
 {
     Console.WriteLine("max = " + num2);
 }
+*/
 
-
+/*
 int num1, num2, num3, max;
 
 Console.Write("Input first number ");
@@ -47,6 +49,4 @@ else
 }
 
 Console.WriteLine("max = " + max);
-
-*/
-    
+*/    
