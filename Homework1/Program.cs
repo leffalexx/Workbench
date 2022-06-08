@@ -67,3 +67,24 @@ else
 }
 */
 
+int num, current;
+
+current = 1;
+
+Console.Write("Input number ");
+num = Convert.ToInt32(Console.ReadLine());
+
+while (true)
+{
+    if (current % 2 == 0)
+    {
+        Console.Write(current + " ");
+        current++;
+    }
+    else
+    current++;
+    if (current > num)
+    {
+        break;
+    }
+}
