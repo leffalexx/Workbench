@@ -49,4 +49,21 @@ else
 }
 
 Console.WriteLine("max = " + max);
-*/    
+*/
+
+/*
+int num;
+
+Console.Write("Input number ");
+num = Convert.ToInt32(Console.ReadLine());
+
+if (num % 2 == 0)
+{
+    Console.WriteLine("Even");
+}
+else
+{
+    Console.WriteLine("Odd");
+}
+*/
+
