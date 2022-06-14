@@ -21,7 +21,7 @@ Console.WriteLine(result);
 
 int ThirdDigit(int num)
         {
-            if (num / 100 < 0)
+            if (num < 100)
                 Console.WriteLine("Третьей цифры нет");
             else
             {
@@ -31,6 +31,7 @@ int ThirdDigit(int num)
                 }
             }
             num = num % 10;
+            return num;
         }
 
         int num;
