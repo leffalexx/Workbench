@@ -137,5 +137,17 @@ int b = CutNumber();
 Console.WriteLine(b);
 */
 
+/*
+string IsAliquot(int num1, int num2)
+{
+    if(num2 % num1 == 0)
+    {
+        return "True";
+    }
+    else
+    {
+        return "False, rest num is " + (num2 % num1);
+    }
+} */
 
 
