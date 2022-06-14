@@ -32,9 +32,7 @@ if (num >= 10 && num <= 99)
             Console.Writeline("your number is not 2-digit!!1");
         }
 Console.Writeline(result + "is bigger");
-
-
-
+*/
 
 
 // c = a % b - знак % оставляет остаток от деления
@@ -46,7 +44,7 @@ Console.Writeline(result + "is bigger");
 // 1234 / 10 -> 123
 // 1234 % 10 -> 4
 // 1234 / 10 -> 123 % 10 -> 3
-*/
+
 
 /*Random rnd = new Random();
 int number = rnd.Next(100, 999);
@@ -95,7 +93,7 @@ else
 }*/
 
 
-
+/*
 int FunctionDiv(int num)
 {
     if (num % 7 == 0 && num % 23 == 0)
@@ -121,4 +119,23 @@ if(result == 1)
 else
 {
     Console.WriteLine("No");
+}*/
+
+/*
+int CutNumber()
+{
+    int num = new Random().Next(100,1000);
+    Console.WriteLine($"Current number is {num}"); // ("Current number is " + num)
+
+    int hund = num / 100;
+    int dig = num % 10;
+
+    int result = hund * 10 + dig;
+    return result;
 }
+int b = CutNumber();
+Console.WriteLine(b);
+*/
+
+
+
