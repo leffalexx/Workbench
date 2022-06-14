@@ -34,7 +34,7 @@ int ThirdDigit(int num)
         }
 
         int num;
-        
+
         Console.Write("Input any number ");
         num = Convert.ToInt32(Console.ReadLine());
 
