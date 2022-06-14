@@ -58,3 +58,22 @@ Console.WriteLine(num1 = number / 100);
 Console.WriteLine(num2 = number % 10);
 Console.WriteLine($"{num1}{num2}");*/
 
+int num1, num2;
+
+Console.Write("Input integer number: ");
+num1 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Input integer number: ");
+num2 = Convert.ToInt32(Console.ReadLine());
+
+int result;
+
+if (num1 % num2 == 0)
+{
+    Console.Write("Yes");
+}
+else
+{
+    result = num1 % num2;
+    Console.Write(result);
+}
