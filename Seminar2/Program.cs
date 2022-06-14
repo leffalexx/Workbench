@@ -151,3 +151,9 @@ string IsAliquot(int num1, int num2)
 } */
 
 
+bool IsAliquot2(int num)
+{
+    if(num % 23*7 == 0) return true;
+    else return false;
+    // return(num % 23*7 == 0);
+}
