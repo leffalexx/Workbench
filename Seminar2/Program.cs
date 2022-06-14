@@ -58,7 +58,8 @@ Console.WriteLine(num1 = number / 100);
 Console.WriteLine(num2 = number % 10);
 Console.WriteLine($"{num1}{num2}");*/
 
-int num1, num2;
+
+/*int num1, num2;
 
 Console.Write("Input integer number: ");
 num1 = Convert.ToInt32(Console.ReadLine());
@@ -76,4 +77,48 @@ else
 {
     result = num1 % num2;
     Console.Write(result);
+}*/
+
+
+/*int num;
+
+Console.Write("Input integer number: ");
+num = Convert.ToInt32(Console.ReadLine());
+
+if (num % 7 == 0 && num % 23 == 0)
+{
+    Console.Write("Yes");
+}
+else
+{
+    Console.Write ("No");
+}*/
+
+
+
+int FunctionDiv(int num)
+{
+    if (num % 7 == 0 && num % 23 == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return -1;
+    }
+}
+
+Console.Write("Input integer number: ");
+
+int num = Convert.ToInt32(Console.ReadLine());
+
+int result  = FunctionDiv(num);
+
+if(result == 1)
+{
+    Console.WriteLine("Yes");
+}
+else
+{
+    Console.WriteLine("No");
 }
