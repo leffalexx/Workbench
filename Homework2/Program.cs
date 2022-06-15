@@ -20,7 +20,7 @@ Console.WriteLine(result);
 
 
 
-
+/*
 int ThirdDigit(int num)
         {
      
@@ -48,8 +48,22 @@ int ThirdDigit(int num)
         int result = ThirdDigit(num);
 
         Console.WriteLine(result); 
+*/
 
+bool WeekEnd(int num)
+{
+    if(num > 5) return true;
+    else return false;
+}
 
+int num;
+
+Console.Write("Input number of a weekday ");
+num = Convert.ToInt32(Console.ReadLine());
+
+bool result = WeekEnd(num);
+
+Console.WriteLine(result);
 
 
 
