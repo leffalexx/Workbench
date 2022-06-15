@@ -19,13 +19,19 @@ Console.WriteLine(result);
 */
 
 
+
+
 int ThirdDigit(int num)
         {
+     
             if (num < 100)
-                Console.WriteLine("Третьей цифры нет");
-            else
             {
-                while (num / 100 > 1)
+                Console.WriteLine("Третьей цифры нет");
+                return -1;
+            }
+            else
+                {
+                while (num / 1000 > 1)
                 {
                     num = num / 10;
                 }
@@ -41,4 +47,9 @@ int ThirdDigit(int num)
 
         int result = ThirdDigit(num);
 
-        Console.WriteLine(result);
+        Console.WriteLine(result); 
+
+
+
+
+
