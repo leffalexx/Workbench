@@ -65,25 +65,6 @@ Console.WriteLine("sum of odd indexes is " + SumOfOddIndexes(myArray));
 */
 
 //Задайте массив вещественных(дробных, см. Random().NextDouble()) чисел. Найдите разницу между максимальным и минимальным элементов массива.
-/*
-double[] CreateRandomArray(int size)
-{
-  double[] newArray = new int[size];
-
-  for (int i = 0; i < size; i++)
-  {
-    newArray[i] = new Random() .NextDouble(1, 10);
-    Console.Write(newArray[i] + " ");
-  }
-  Console.WriteLine();
-
-  return newArray;
-}
-
-double[] newArray = CreateRandomArray(10);
-Console.WriteLine(newArray);
-*/
-
 
 double[] CreateRandomArray(int size)
     {
