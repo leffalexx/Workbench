@@ -33,3 +33,33 @@ int AmountOfPositive(int[] newArray)
 Console.WriteLine("Количество чисел больше нуля " + AmountOfPositive(newArray));
 */
 
+// Напишите программу, которая будет создавать копию заданного массива с помощью поэлементного копирования
+
+
+int[] NewArray(int size, int min, int max)
+{
+    int [] myArray = new int [size];
+    for (int i = 0; i < size; i++)
+    {
+        myArray[i] = new Random().Next(min, max + 1);
+        Console.Write(myArray[i] + " ");
+    }
+    Console.WriteLine();
+    return myArray;
+}
+
+int[] CopyOfArray(int[] array)
+{
+    int[] copy = new int[array.Length];
+    for (int i = 0; i < array.Length; i++)
+    {
+        copy[i] = array[i];
+        Console.Write(copy[i] + " ");
+    }
+    return array;
+}
+
+Console.WriteLine("Неповторимый оригинал: ");
+int[] Result = NewArray(10, -10, 10);
+Console.WriteLine("Жалкая пародия: ");
+CopyOfArray(Result);
