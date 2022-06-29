@@ -59,7 +59,7 @@ int[] CopyOfArray(int[] array)
     return array;
 }
 
-Console.WriteLine("Неповторимый оригинал: ");
+Console.WriteLine("Original array:");
 int[] Result = NewArray(10, -10, 10);
-Console.WriteLine("Жалкая пародия: ");
+Console.WriteLine("Copy of array:");
 CopyOfArray(Result);
