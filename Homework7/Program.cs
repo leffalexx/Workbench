@@ -56,5 +56,38 @@ else
 }
 */
 
+// Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 
+int[,] CreateRandomTwoDemArray(int heignt, int width, int min, int max)
+{
+    int[,] newMatrix = new int[heignt, width];
+    
+    for (int i = 0; i < heignt; i++)
+    {
+        for (int j = 0; j < width; j++)
+        {
+            newMatrix[i,j] = new Random() .Next(min, max + 1);
+            Console.Write(newMatrix[i,j] + " ");
+        }
+        Console.WriteLine();
+    }
+    return newMatrix;
+}
 
+void AverageInColumn (int[,] array)
+{
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+        double average = 0;
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
+        average = array[i,j] + average;
+        }
+    average = average/array.GetLength(0);
+    Console.WriteLine($"Столбец {j+1}: " + average);
+    } 
+
+}
+
+int[,] array = CreateRandomTwoDemArray(4, 5, 1, 9);
+AverageInColumn(array);
