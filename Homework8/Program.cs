@@ -139,5 +139,5 @@ void ShowArray(int[,] array)
     }
 }
 
-int[,] array = SpiralArray(8);
+int[,] array = SpiralArray(4);
 ShowArray(array);
